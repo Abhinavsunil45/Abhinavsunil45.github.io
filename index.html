@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhinav Sunil</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="C:\Users\hp\OneDrive\Desktop\HTML codes\Resume\resume_styles.css">
+<style>
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #87CEEB;
+	font-family: "Bahnschrift";
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 36px;
+	background-color: #FFE5B4;
+	color: #000000;
+	margin-top: -7px;
+	margin-bottom: 0;
+	width: 100%;
+	max-width: 2000px;
+}
+
+table {
+	height: 50px;
+	margin-top: 0;
+	background-color: #000000;
+	width: 100%;
+	max-width: 2000px;
+}
+
+h1,
+table {
+	min-width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr {
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.scrollable-container {
+	height: 1000px;
+	overflow: auto;
+	width-left: auto;
+	width-right: auto;
+}
+
+h2.remove-whitespace {
+	font-family: "Comic Sans MS";
+	font-size: 50px;
+	margin-top: 0;
+	text-align: left;
+	color: #000000;
+	background-color: #f5f5dc;
+	height: 100px;
+}
+
+img {
+	float: left;
+	margin-top: 2px;
+	height: 600px;
+	max-width: auto;
+	min-width: 250px;
+}
+
+p {
+	font-size: 26px;
+}
+
+.square {
+	display: flex;
+	align-items: center;
+}
+
+.image {
+	flex: 1;
+}
+
+.text {
+	flex: 1;
+}
+
+.text p {
+	font-size: 36px;
+	text-align: center;
+	margin-left: auto;
+}
+
+/* Media Query for screens up to 600px */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	img {
+		height: 300px;
+		min-width:auto;
+	}
+
+	p {
+		font-size: 26px;
+	}
+	
+	.square{
+		height:594px;
+		min-width:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.image{
+		min-width:auto;
+	}
+	
+	.text{
+		min-width:auto;
+	}
+
+	/* Resized buttons */
+	input[type="button"] {
+		height: 50px;
+		width: 100px;
+		font-size: 18px;
+		padding: 15px;
+	}
+
+	/* Resized buttons within h2 */
+	h2 input[type="button"] {
+		height: 50px;
+		width: 100px;
+		font-size: 18px;
+		padding: 15px;
+	}
+}
+
+/* Media Query for screens between 601px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	img {
+		height: 400px;
+		min-width:auto;
+	}
+
+	p {
+		font-size: 26px;
+	}
+	
+	.square{
+		height:594px;
+		min-width:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.image{
+		min-width:auto;
+	}
+	
+	.text{
+		min-width:auto;
+	}
+
+	/* Resized buttons */
+	input[type="button"] {
+		height: 50px;
+		width: 100px;
+		font-size: 24px;
+		padding: 25px;
+	}
+
+	/* Resized buttons within h2 */
+	h2 input[type="button"] {
+		height: 50px;
+		width: 100px;
+		font-size: 24px;
+		padding: 25px;
+	}
+}
+
+</style>
+</head>
+<body>
+	<div class="front">
+	<h1 id="Home"><b>Abhinav Sunil</b></h1>
+	<table>
+		<tr>
+			<th title="About"><a href="#About">About</a></th>
+			<th title="Work"><a href="#Work">Work</a></th>
+			<th title="Projects"><a href="#Projects">Projects</a></th>
+			<th title="Contact"><a href="#Contact">Contact</a></th>
+		</tr>
+	</table>
+	<div class="square">
+		<div class="image">
+			<img src="https://github.com/Abhinavsunil45/My-Photo/blob/16a6bbbc00a285e9b09da379b2a170f055bc55b2/IMG-20230520-WA0005.jpg" alt="Photo of Abhinav Sunil">
+		</div>
+		<div class="text">
+			<p>Welcome to Abhinav Sunil's Resume.<br><br>
+				<input type="button" onclick="document.getElementById('About').scrollIntoView();" value="Get Started" style="display:block; margin-left:auto; margin-right:auto;  background-color:black; height:100px; width:200px; color:white; font-family:bahnschrift; font-size:24px;">
+			</p>
+		</div>
+	</div>
+	</div>
+	<div class="scrollable-container">
+		<h2 class="remove-whitespace" id="About"><b>About: <input type="button" onclick="document.getElementById('Home').scrollIntoView();" value="Back to Top" style="float:right; display:block; margin-left:auto; margin-right:auto;  background-color:black; height:100px; width:200px; color:white; font-family:bahnschrift; font-size:24px;"></b></h2>
+		<h2>Date of Birth: 08 July 2004 </h2>
+		<h2>Nationality: Indian</h2>
+		<h2>Place of Origin: Kollam, Kerala</h2>
+		<h2>Languages Known:
+			<ol style="margin-left:50px;">
+				<li>English</li>
+				<li>Tamil</li>
+				<li>Malayalam</li>
+				<li>Hindi</li>
+			</ol>
+		</h2>
+		<h2>Place of Residence: Chennai, Tamil Nadu</h2>
+		<h2>Hobbies: Watching movies, Playing games</h2>
+		<h2>Professional skills: Creating webpages, Designing</h2>
+	</div>
+</body>
+</html>
